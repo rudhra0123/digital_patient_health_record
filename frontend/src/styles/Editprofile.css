@@ -1,0 +1,64 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background: #f4f8fc;
+  min-height: 90vh;
+}
+
+.profile-card {
+  background: #ffffff;
+  width: 700px;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.profile-card h2 {
+  text-align: center;
+  color: #0d47a1;
+  margin-bottom: 30px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.profile-grid input,
+.profile-grid select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #90caf9;
+  font-size: 14px;
+}
+
+.profile-grid input:focus,
+.profile-grid select:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+.profile-button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px;
+  background: #1976d2;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.profile-button:hover {
+  background: #1565c0;
+}
+
+.profile-note {
+  margin-top: 15px;
+  text-align: center;
+  color: #1976d2;
+  font-size: 14px;
+}

@@ -1,0 +1,68 @@
+.upload-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background: #f4f8fc;
+  min-height: 80vh;
+}
+
+.upload-card {
+  background: white;
+  width: 520px;
+  padding: 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.upload-card h2 {
+  text-align: center;
+  color: #0d47a1;
+  margin-bottom: 25px;
+}
+
+.upload-group {
+  margin-bottom: 18px;
+}
+
+.upload-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #37474f;
+}
+
+.upload-group input {
+  width: 100%;
+  padding: 11px;
+  border-radius: 6px;
+  border: 1px solid #90caf9;
+  font-size: 14px;
+}
+
+.upload-group input:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+.upload-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background: #1565c0;
+}
+
+.upload-note {
+  margin-top: 15px;
+  text-align: center;
+  color: #1976d2;
+  font-size: 14px;
+}

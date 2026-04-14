@@ -1,0 +1,87 @@
+.dashboard-container {
+  background: #f4f8fc;
+  min-height: 80vh;
+  padding: 30px;
+}
+
+.welcome-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  margin-bottom: 30px;
+}
+
+.welcome-card h2 {
+  color: #0d47a1;
+  margin-bottom: 5px;
+}
+
+.welcome-card p {
+  color: #555;
+}
+
+/* ACTION + STATUS ROW */
+.card-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.action-card {
+  background: #e3f2fd;
+  padding: 20px;
+  width: 240px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.action-card:hover {
+  background: #bbdefb;
+}
+
+.action-card h4 {
+  color: #0d47a1;
+}
+
+.action-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+.status-card {
+  background: white;
+  padding: 20px;
+  width: 240px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.status-card h4 {
+  color: #0d47a1;
+}
+
+.status-card p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* SUMMARY */
+.summary-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.summary-card h3 {
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.summary-card p {
+  color: #555;
+  line-height: 1.6;
+}

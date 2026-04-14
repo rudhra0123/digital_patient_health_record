@@ -1,0 +1,181 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard{
+display:flex;
+height:100vh;
+background:#f4f9ff;
+}
+
+
+.sidebar{
+width:240px;
+background:linear-gradient(180deg,#0f172a,#1e3a8a);
+color:white;
+padding:25px;
+display:flex;
+flex-direction:column;
+}
+
+.sidebar h2{
+text-align:center;
+margin-bottom:30px;
+font-weight:600;
+}
+
+.sidebar button{
+background:none;
+border:none;
+color:white;
+text-align:left;
+padding:12px;
+margin:6px 0;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.sidebar button:hover{
+background:rgba(255,255,255,0.15);
+}
+
+
+
+.content{
+flex:1;
+display:flex;
+flex-direction:column;
+padding:25px;
+overflow:auto;
+}
+
+
+.topbar{
+display:flex;
+justify-content:flex-end;
+align-items:center;
+margin-bottom:25px;
+}
+
+.user-box{
+display:flex;
+align-items:center;
+gap:10px;
+background:white;
+padding:8px 14px;
+border-radius:20px;
+box-shadow:0 2px 6px rgba(0,0,0,0.08);
+}
+
+.user-icon{
+width:35px;
+height:35px;
+border-radius:50%;
+background:#2563eb;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-weight:bold;
+}
+
+
+.cards{
+display:flex;
+gap:20px;
+margin-top:20px;
+margin-bottom:30px;
+}
+
+.card{
+flex:1;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-3px);
+}
+
+.card h3{
+margin-top:10px;
+font-size:28px;
+color:#2563eb;
+}
+
+
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 3px 8px rgba(0,0,0,0.08);
+}
+
+table th{
+background:#2563eb;
+color:white;
+padding:12px;
+text-align:left;
+}
+
+table td{
+padding:12px;
+border-bottom:1px solid #eee;
+}
+
+table tr:hover{
+background:#f1f5ff;
+}
+
+
+input{
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+margin-right:10px;
+}
+
+
+
+button{
+padding:8px 14px;
+border:none;
+border-radius:6px;
+background:#2563eb;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#1e40af;
+}
+
+
+form, .form-box{
+background:white;
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+box-shadow:0 3px 8px rgba(0,0,0,0.08);
+}
+
+form input{
+display:block;
+margin-bottom:12px;
+width:300px;
+}
+.sidebar button.active{
+background:#2563eb;
+}

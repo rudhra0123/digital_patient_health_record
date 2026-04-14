@@ -1,37 +1,41 @@
 const mongoose = require("mongoose");
 
 const recordSchema = new mongoose.Schema({
-  patientId: {
+  patientUid: {
+    type: String,
+    required: true
+  },
+  visitId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Patient",
-    required: true
+    ref: "Visit",
+    default: null 
   },
-
-  hospitalName: {
+  hospital: {
     type: String,
     required: true
   },
-
-  doctorName: {
+  doctor: {
     type: String,
     required: true
   },
-
+  reason: String,
   visitDate: {
-    type: Date,
-    required: true
-  },
-
-  summaryText: {
-    type: String
-  },
-
-  pdfUrl: {
     type: String,
     required: true
   },
-
-  uploadedAt: {
+  fileUrl: {
+    type: String,
+    required: true
+  },
+  fileKey: {
+    type: String,
+    required: false
+  },
+  summary: {
+    type: String,
+    default: ""
+  },
+  createdAt: {
     type: Date,
     default: Date.now
   }

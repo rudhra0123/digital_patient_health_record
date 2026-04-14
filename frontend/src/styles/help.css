@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+.help-wrap {
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  background: #f4f7ff;
+  padding: 40px 32px;
+  box-sizing: border-box;
+}
+
+/* HERO */
+.help-hero {
+  background: linear-gradient(135deg, #0d1b3e 0%, #1a3a6e 60%, #1a6fd4 100%);
+  border-radius: 24px;
+  padding: 48px 48px 40px;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.help-hero::before {
+  content: "";
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 260px; height: 260px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 50%;
+}
+.help-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -80px; left: 30%;
+  width: 320px; height: 320px;
+  background: rgba(26,111,212,0.18);
+  border-radius: 50%;
+}
+.help-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #a8c8ff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.help-hero h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 12px;
+  line-height: 1.1;
+  position: relative;
+  z-index: 1;
+}
+.help-hero p {
+  color: #a8c8ff;
+  font-size: 16px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  font-weight: 300;
+}
+.help-hero-stats {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+  position: relative;
+  z-index: 1;
+}
+.help-stat {
+  text-align: left;
+}
+.help-stat-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+}
+.help-stat-label {
+  font-size: 12px;
+  color: #a8c8ff;
+  margin-top: 2px;
+}
+
+/* GRID LAYOUT */
+.help-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .help-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* SECTION CARD */
+.help-card {
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #e2eaf8;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(13,27,62,0.06);
+}
+.help-card-header {
+  padding: 24px 28px 0;
+}
+.help-section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1a6fd4;
+  margin-bottom: 6px;
+}
+.help-section-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0d1b3e;
+  margin: 0 0 20px;
+}
+
+/* FAQ */
+.faq-list {
+  padding: 0 0 8px;
+}
+.faq-item {
+  border-top: 1px solid #f0f4fa;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.faq-item:hover {
+  background: #f8faff;
+}
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 28px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #0d1b3e;
+  gap: 12px;
+}
+.faq-chevron {
+  font-size: 12px;
+  color: #1a6fd4;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+.faq-chevron.open {
+  transform: rotate(180deg);
+}
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease, padding 0.3s;
+  font-size: 13px;
+  color: #6b7fa3;
+  line-height: 1.7;
+  padding: 0 28px;
+}
+.faq-answer.open {
+  max-height: 200px;
+  padding: 0 28px 16px;
+}
+
+/* CONTACT FORM */
+.help-form-body {
+  padding: 0 28px 28px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.form-group-h label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #0d1b3e;
+  margin-bottom: 6px;
+  letter-spacing: 0.3px;
+}
+.form-group-h input,
+.form-group-h textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid #dce6f5;
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #0d1b3e;
+  background: #f8faff;
+  outline: none;
+  transition: border 0.2s, background 0.2s;
+  box-sizing: border-box;
+}
+.form-group-h input:focus,
+.form-group-h textarea:focus {
+  border-color: #1a6fd4;
+  background: #fff;
+}
+.form-group-h textarea {
+  resize: vertical;
+}
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* ALERT BOXES */
+.alert-success {
+  background: linear-gradient(135deg, #e6faf3, #d0f5e8);
+  border: 1px solid #00c48c;
+  border-radius: 12px;
+  padding: 14px 18px;
+  color: #00874f;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.alert-error {
+  background: #fef0f3;
+  border: 1px solid #e74c6f;
+  border-radius: 12px;
+  padding: 14px 18px;
+  color: #e74c6f;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* SUBMIT BUTTON */
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #0d1b3e, #1a6fd4);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Syne', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s;
+  margin-top: 18px;
+  letter-spacing: 0.5px;
+}
+.btn-submit:hover:not(:disabled) {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* QUICK LINKS */
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 28px 28px;
+}
+.quick-link-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #e2eaf8;
+  background: #f8faff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.quick-link-item:hover {
+  background: #eef4ff;
+  border-color: #1a6fd4;
+  transform: translateX(4px);
+}
+.quick-link-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1a6fd4, #3b8fe8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.quick-link-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0d1b3e;
+}
+.quick-link-sub {
+  font-size: 11px;
+  color: #6b7fa3;
+  margin-top: 2px;
+}
