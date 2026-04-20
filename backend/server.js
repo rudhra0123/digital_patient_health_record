@@ -39,7 +39,7 @@ const doctorRoutes = require("./routes/doctorRoutes");
 
 app.use("/api/doctor",doctorRoutes);
 
-const adminRoutes =require("./routes/AdminRoutes");
+const adminRoutes =require("./routes/adminRoutes");
 app.use("/api/admin", adminRoutes);
 
 const mlRoutes = require("./routes/mlRoutes");
